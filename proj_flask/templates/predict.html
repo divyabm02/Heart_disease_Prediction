@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<head></head>
+<body>
+	
+	<html lang="en">
+<head>
+<title>Prediction</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<html>
+<head>
+<style>
+body  {
+  background-image: url("https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  
+}
+</style>
+</head>
+<body>
+<audio id ="myaudio">
+	<source src="C:/Users/id/Desktop/trai/www/positive.mp3" type="audio/mp3">
+</audio>
+ <div class="login">
+ 	<h1>Prediction</h1>
+
+ 	<!-- <form action="{{url_for('prediction')}}" method="post"> -->
+ 	<h1><dialog open>{{prediction_text}} </dialog></h1>	
+ 	<form action="{{url_for('prediction')}}" method="post">
+ 		<input type="text" name="gen" placeholder="Gender" required="required"/><br><br>
+ 		<input type="text" name="age" placeholder="Age" required="required"/><br><br>
+ 		<input type="text" name="cgspd" placeholder="Cigarettes Per Day" required="required"/><br><br>
+ 		<input type="text" name="ps" placeholder="Prevalent Stroke" required="required"/><br><br>
+ 		<input type="text" name="ph" placeholder="Prevalent Hyp" required="required"/><br><br>
+ 		<input type="text" name="db" placeholder="Diabetes" required="required"/><br><br>
+ 		<input type="text" name="totChol" placeholder="Total Cholestrol" required="required"/><br><br>
+ 		<input type="text" name="sysBP" placeholder="Systolic Blood Pressure" required="required"/><br><br>
+ 		<input type="text" name="BMI" placeholder="BMI" required="required"/><br><br>
+ 		<input type="text" name="gc" placeholder="Glucose " required="required"/><br><br>
+ 
+ 		<input type="submit" value="Predict" id="sendBtn">
+
+ 	</form>
+ 	<br>
+ 	

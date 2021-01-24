@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<head>
+	<link href="{{url_for('static',filename = 'css/main1.css')}}" >
+	<title>EDA</title>
+
+<body>
+	<h1 style="text-align:left;""font-size:400%;">INSIGHTS</h1>
+
+
+	
+	
+	<html lang="en">
+<head>
+<title>Exploratory data analysis</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<html>
+<head>
+<style>
+body  {
+  background-image: url("https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+ 
+</style>
+<!-- <img src="{{url_for('static',filename='img/Screenshot.png')}}" style="width:420px;height:350px;"><br><br><br> -->
+<!-- <img src="{{url_for('static',filename='img/Screenshot1.png')}}" style="width:420px;height:350px;" align=bottom ><br><br><br> -->
+<!-- <img src="{{url_for('static',filename='img/Screenshot2.png')}}" style="width:420px;height:350px;" align=bottom ><br><br><br> -->
+
+</head>
+</body>
+<html> 
+<body>
+
+ 
+
+
+<select id="dlist" onChange="swapImage()" align = right>
+<option>select</option><br><br><br>
+<option value="{{url_for('static',filename='img/Screenshot.png')}}">Distribution of Target Function </option><br><br><br>
+<option value="{{url_for('static',filename='img/Screenshot2.png')}}">Count of male and female</option><br><br><br>
+<option value="{{url_for('static',filename='img/Screenshot1.png')}}">Scatter Plot Systolic versus Diastolic</option><br><br><br>
+<option value="{{url_for('static',filename='img/Screenshot3.png')}}">Heart Rate Range</option><br><br><br>
+<option value="{{url_for('static',filename='img/Screenshot4.png')}}">BMI Range</option><br><br><br>
+<option value="{{url_for('static',filename='img/Screenshot5.png')}}">Cholesterol Range</option><br><br><br>
+</select>
+
+<img id="imageToSwap">
+
+<script type="text/javascript">
+ function swapImage(){ 
+	 var image = document.getElementById("imageToSwap"); 
+	 var dropd = document.getElementById("dlist"); 
+	 image.src = dropd.value;	 
+ }; 
+ </script><br> 
+
+
+<br/><br/>
+
+
+
+
+</body>
+</html>
+
+
