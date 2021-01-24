@@ -3,7 +3,7 @@ The project was built to predict predict if a person is prone to get heart disea
 
 ### **Problem statement**
 
-To predict whether a person has a risk of getting heart disease in next 10 years
+To predict whether a person has a risk of getting heart disease in the next 10 years
 
 ### **Data Description**
 - Data is taken from kaggle.
